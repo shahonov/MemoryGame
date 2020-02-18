@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
+        <link rel='stylesheet' media='(max-width: 500px)' href='./styles/phone-styles.css' />
+        <link rel='stylesheet' media='(min-width: 501px) and (max-width: 900px)' href='./styles/tablet-styles.css' />
+        <link rel='stylesheet' media='(min-width: 901px) and (max-width: 1300px)' href='./styles/laptop-styles.css' />
+        <link rel='stylesheet' media='(min-width: 1300px)' href='./styles/wide-screen-styles.css' />
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+        <title>Memorize It!</title>
+    </head>
+    <body>
+        <div id='container'>
+            <div class='page-header'>
+                <img class='logo-left' src='./imgs/memory-left.svg' alt='memory' />
+                <h1 class='header impact' onclick='jquery()'>Memorize It!</h1>
+                <img class='logo-right' src='./imgs/memory-right.svg' alt='memory' />
+            </div>
+            <nav>
+                <button class='start-game btn on' onclick='performRandomPlacement()'>
+                    <img src='./imgs/start-btn.svg' alt='start' />
+                </button>
+                <button class='reset-game btn on' onclick='clearAll()'>
+                    <img src='./imgs/restart-btn.svg' alt='restart' />
+                </button>
+            </nav>
+            <section class='gamefield-container'>
+                <div class='in-game-message-box impact'>
+                    <p id='message-box'>Click Start Button</p>
+                </div>
+                <div id='gamefield' class='gamefield' onclick='performCheck()'>
+                    <div id='item1' class='item gradient off stable'></div>
+                    <div id='item2' class='item gradient off stable'></div>
+                    <div id='item3' class='item gradient off stable'></div>
+                    <div id='item4' class='item gradient off stable'></div>
+                    <div id='item5' class='item gradient off stable'></div>
+                    <div id='item6' class='item gradient off stable'></div>
+                    <div id='item7' class='item gradient off stable'></div>
+                    <div id='item8' class='item gradient off stable'></div>
+                    <div id='item9' class='item gradient off stable'></div>
+                    <div id='item10' class='item gradient off stable'></div>
+                    <div id='item11' class='item gradient off stable'></div>
+                    <div id='item12' class='item gradient off stable'></div>
+                    <div id='item13' class='item gradient off stable'></div>
+                    <div id='item14' class='item gradient off stable'></div>
+                    <div id='item15' class='item gradient off stable'></div>
+                    <div id='item16' class='item gradient off stable'></div>
+                </div>
+                <div class='in-game-stats'>
+                    <div>
+                        <p class='attempts impact'>Attempts: 
+                            <span id='attempts-count'>0</span>
+                        </p>
+                    </div>
+                    <div class='rating-score'>
+                        <p class='rating-text impact'>Rating:</p>
+                        <img id='star1' class='star' src='./imgs/star.svg' alt='star' />
+                        <img id='star2' class='star' src='./imgs/star.svg' alt='star' />
+                        <img id='star3' class='star' src='./imgs/star.svg' alt='star' />
+                    </div>
+                    <div>
+                        <p class='time impact'>Time elapsed: 
+                            <span id='time-elapsed'>00:00</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <script src='./js/component-placement.js'></script>
+        <script src='./js/game-engine.js'></script>
+        <script src='./js/animation-controller.js'></script>
+        <script src='./js/global-stats.js'></script>
+    </body>
+</html>

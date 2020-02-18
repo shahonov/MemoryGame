@@ -1,0 +1,284 @@
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1080px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+
+
+/* HEADER */
+.page-header {
+    width: 100%;
+    height: 10%;
+    display: flex;
+}
+
+.logo-left {
+    width: 40%;
+    height: 90%;
+}
+
+.header {
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    font-size: 2em;
+}
+
+.logo-right {
+    width: 40%;
+    height: 90%;
+}
+/* HEADER */
+
+
+
+
+
+
+
+/* NAVIGATION */
+nav {
+    width: 15%;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: blue;
+}
+
+nav .btn {
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+
+nav .btn img {
+    width: 20%;
+    height: 20%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav .start-game, nav .reset-game {
+    background: linear-gradient(white, grey);
+}
+/* NAVIGATION */
+
+
+
+
+
+
+
+/* GAMEFIELD */
+/* GAMEFIELD __ MESSAGES */
+section.gamefield-container {
+    width: 85%;
+    height: 90%;
+}
+
+section .in-game-message-box {
+    width: 99%;
+    height: 15%;
+    background-color: white;
+    border: 1px solid black; 
+    display: flex;
+}
+
+#message-box {
+    width: 100%;
+    height: 100%;
+    font-size: 1.5em;
+    text-align: center;
+}
+/* GAMEFIELD __ MESSAGES */
+
+/* GAMEFIELD __ CARDS */
+section .gamefield {
+    width: 100%;
+    height: 70%;
+    background: radial-gradient(grey, white);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    width: 21%;
+    height: 21%;
+    border: 1px solid black;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.item.gradient {
+    background: radial-gradient(white, grey);
+}
+
+.image {
+    width: 70%;
+    height: 70%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* GAMEFIELD __ CARDS */
+
+/* GAMEFIELD __ STATS */
+section .in-game-stats {
+    widows: 100%;
+    height: 15%;
+    background: linear-gradient(white, grey);
+    display: flex;
+}
+
+.in-game-stats div {
+    width: 50%;
+    height: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.attempts, .time {
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 1.2em;
+}
+
+#attempts-count, #time-elapsed {
+    font-size: 1.4em;
+    text-decoration: underline;
+}
+
+.rating-score {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rating-text {
+    margin-top: 0.3em;
+    width: 100%;
+    height: 5%;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.star {
+    width: 33%;
+    height: 40%;
+    display: inherit;
+}
+/* GAMEFIELD __ STATS */
+/* GAMEFIELD */
+
+
+
+
+
+
+
+/* BOX CLICK TOGGLE CLASSES */
+.on {
+    cursor: pointer;
+}
+
+.off {
+    cursor: not-allowed;
+}
+
+.true {
+    background-color: greenyellow;
+    transition: 0.5s;
+}
+
+.false {
+    background-color: red;
+    transform: 0.5s;
+}
+
+.matched {
+    background-color: white;
+    transition: 0.5s;
+}
+
+.focus {
+    width: 23%;
+    height: 23%;
+    border: 2px solid grey;
+    background: white;
+    transition: 0.3s;
+}
+
+.stable {
+    width: 21%;
+    border: 1px solid black;
+    transition: 0.5s;
+}
+
+.hidden {
+    display: none;
+}
+/* BOX CLICK TOGGLE CLASSES */
+
+
+
+
+
+
+
+/* INDEPENDANT */
+.impact {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+/* INDEPENDANT */
+
+
+
+
+
+
+
+/* MODAL */
+#modal {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(white, silver);
+    border: 2px solid black;
+    left: 0;
+    right: 0;
+    top: 12em;
+    margin: auto;
+}
+
+.modal.header {
+    text-align: center;
+    width: 100%;
+    height: 15%;
+}
+
+.modal.stats, .stats-attempts, .stats-stars, .stats-time {
+    text-align: center;
+}
+
+.modal.btn {
+    width: 50%;
+    height: 15%;
+    margin-left: 5.5em;
+    border: 1px solid black'
+}
+/* MODAL */
